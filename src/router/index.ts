@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
+import Invite from '../types/Invite.vue';
+import TeamMemberList from '../types/TeamMemberList.vue';
+import Edit from '../types/Edituser.vue';
 
 Vue.use(VueRouter);
 
@@ -9,6 +12,21 @@ const routes: Array<RouteConfig> = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/Invite',
+    name: 'Invite',
+    component: Invite,
+  },
+  {
+    path: '/edit',
+    name: 'Edit',
+    component: Edit,
+  },
+  {
+    path: '/TeamMemberList',
+    name: 'TeamMemberList',
+    component: TeamMemberList,
   },
   {
     path: '/about',
